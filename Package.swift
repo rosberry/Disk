@@ -8,7 +8,6 @@ let package = Package(
     platforms: [
         .iOS(.v13)
     ],
-    path: "Sources",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -23,6 +22,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Disk",
-            dependencies: [])
+            dependencies: [],
+            path: "Sources")
     ]
 )
